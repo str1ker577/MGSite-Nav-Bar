@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mapua Gaming Society</title>
+</head>
+
+<body>
+
+    <!--Navigation Bar - Lim-->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="Logo.jpg" alt="Mapua Gaming Society Logo"> Mapua Gaming Society</a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!--This Script allows the Navigation Bar to collapse into a drop down menu when the webpage is scaled down - Lim-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<!--Footer - Lim -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Organization</h4>
+                        <ul class="footer-list">
+                            <li><a href="About.html">About Us</a></li>
+                            <li><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                <div class="footer-col">
+                    <h4>Officers</h4>
+                    <ul class="footer-list">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Developers</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Alexis Manuel</a></li>
+                        <li><a href="#">Andre Manguera</a></li>
+                        <li><a href="#">JJ Botabara</a></li>
+                        <li><a href="#">Kyle Lim</a></li>
+                        <li><a href="#">Zidane Yu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social-links">
+                        <a href="#"><i class='bx bxl-facebook-circle' style='color:#54cedc'  ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' style='color:#54cedc' ></i></a>
+                        <a href="#"><i class='bx bxl-discord-alt' style='color:#54cedc' ></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
